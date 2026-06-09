@@ -32,7 +32,58 @@ TwsausageApp/
 └── requirements.txt        # Python 依賴套件清單
 
 ***
+🛠️ 開發環境與技術棧
+程式語言：Python / C#
 
+遊戲引擎/框架：Unity (URP) / Web Tech
+
+自動化工具：Pandas, Pillow, PyInstaller
+
+API 整合：LINE Messaging API, AI-assisted System
+
+🚀快速開始
+前提條件
+請確保您的電腦已安裝 Python 3.10+ 或對應的執行環境。
+
+安裝步驟
+複製專案倉庫
+
+Bash
+git clone [https://github.com/your-username/TwsausageApp.git](https://github.com/your-username/TwsausageApp.git)
+cd TwsausageApp
+解壓核心資源包
+使用 7-Zip 或相關工具解壓 TwsausageApp.7z 至專案根目錄。
+
+安裝依賴套件
+
+Bash
+pip install -r requirements.txt
+執行應用程序
+
+Bash
+python main.py
+📦 打包發佈
+若需要將本專案打包為獨立的 Windows 桌面執行檔，可以使用 pyinstaller：
+
+Bash
+pyinstaller --onefile --windowed main.py
+🤝 貢獻指南
+我們非常歡迎任何形式的貢獻！如果您有任何想法、Bug 反饋或功能建議，請遵循以下步驟：
+
+Fork 本專案
+
+建立您的特性分支 (git checkout -b feature/AmazingFeature)
+
+提交您的修改 (git commit -m 'Add some AmazingFeature')
+
+推送到分支 (git push origin feature/AmazingFeature)
+
+開啟一個 Pull Request
+
+📄 開源授權條款
+本專案採用 MIT 授權條款 進行開源 - 詳見 LICENSE 檔案。
+
+💡 本專案由 Kai Mao Technology 技術教育工程團隊與 AI 協作研發。
 ### 🛠️ 我可以如何修改這個範本？
 1. **調整簡介**：如果不完全是骰子遊戲或香腸地圖，你可以把 `📖 專案簡介` 修改為最符合你目前開發項目的文字。
 2. **修改快速開始**：如果這是純 C# / Unity 專案，你可以把安裝步驟改成「使用 Unity Hub 開啟專案」。
