@@ -1,90 +1,226 @@
-# TwsausageApp 🌭
+# 🌭 TwSausageApp - 台式炭烤香腸點餐系統
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform: Web / Standalone](https://img.shields.io/badge/platform-Web%20%7C%20Standalone-blue)](https://github.com/)
+一個使用 Java Swing 開發的台灣小吃點餐系統，模擬炭烤香腸攤位的點餐流程，並結合傳統民俗遊戲「十八啦」作為優惠活動。
 
-歡迎來到 **TwsausageApp**！這是一個融合台灣在地文化與現代數位體驗的應用程式專案。
+---
 
-## 📖 專案簡介
+# 📖 專案介紹
 
-`TwsausageApp` 旨在透過數位化方式呈現台灣傳統小吃（特別是台灣香腸）的獨特魅力。無論是經典的廟口骰子遊戲（十八仔）、香腸攤位地圖搜羅，還是自動化的資料處理系統，本專案提供了一套完整的解決方案。
+TwSausageApp 是一套桌面版點餐系統，提供使用者：
 
-## ✨ 核心功能
+* 商品點餐
+* 數量增減
+* 折扣計算
+* 訂單明細產生
+* 列印功能
+* 十八啦骰子小遊戲
+* 即時時間顯示
 
-* 🎲 **數位大腸包小腸遊戲**：完美還原經典的「十八仔」骰子博弈體驗。
-* 📊 **多源資料整合系統**：內建強大的數據解析模組，支援多達 166 組核心資源包（Source Data）的解碼與分類管理。
-* 🚀 **跨平台支援**：支援 Web 瀏覽器端運行，並可透過工具打包為獨立的桌面執行檔 (`.exe`)。
-* 🤖 **智慧型通知整合**：內建自動化串接模組（如 LINE Messaging API），即時回報系統狀態。
+透過 Java Swing 建立圖形化介面，模擬台灣夜市香腸攤的實際點餐情境。
 
-## 📁 專案架構
+---
 
-專案核心資源與架構封裝於 `TwsausageApp.7z` 中，解壓縮後的基本結構如下：
+# 🎯 系統特色
+
+✅ 圖形化點餐介面
+
+✅ 自動計算金額
+
+✅ 多種商品選購
+
+✅ 會員折扣功能
+
+✅ 訂單列印
+
+✅ 十八啦骰子遊戲
+
+✅ 中獎贈送香腸活動
+
+✅ 即時時間顯示
+
+---
+
+# 🍢 菜單內容
+
+| 商品     | 單價    |
+| ------ | ----- |
+| 古早味烤香腸 | NT$45 |
+| 花生糯米腸  | NT$40 |
+| 大腸包小腸  | NT$75 |
+| 綜合甜不辣  | NT$30 |
+| 飲料     | NT$25 |
+
+---
+
+# 🎲 十八啦小遊戲
+
+完成點餐後可參加「十八啦」遊戲。
+
+## 遊戲規則
+
+* 玩家與老闆各擲四顆骰子
+* 系統依照十八啦規則計算點數
+* 比較雙方大小
+
+### 獎勵機制
+
+| 結果   | 獎勵       |
+| ---- | -------- |
+| 玩家獲勝 | 贈送指定數量香腸 |
+| 平手   | 贈送香腸 1 根 |
+| 玩家失敗 | 無額外贈送    |
+
+---
+
+# 🏗 專案架構
 
 ```text
-TwsausageApp/
-├── src/                    # 原始碼目錄
-│   ├── app/                # 應用程式核心邏輯
-│   └── utils/              # 自動化與資料處理工具
-├── assets/                 # 靜態資源（圖片、音效、Mascot 設計）
-├── data/                   # 資料庫與多源數據集
-│   └── sources/            # Source 1 至 Source 166 的原始數據
-├── README.md               # 專案說明文件
-└── requirements.txt        # Python 依賴套件清單
+TwSausageApp
+│
+├── twsausage.java
+│   ├─ 訂單資料模型
+│   ├─ 金額計算
+│   └─ 訂單明細產生
+│
+├── twsausageUi.java
+│   ├─ 主畫面
+│   ├─ 點餐介面
+│   ├─ 折扣設定
+│   └─ 列印功能
+│
+├── si̍ppatlah.java
+│   ├─ 十八啦遊戲邏輯
+│   ├─ 骰子規則判定
+│   └─ 勝負計算
+│
+├── sippatlahUi.java
+│   └─ 十八啦遊戲介面
+│
+└── img/
+    ├─ 骰子圖片
+    └─ UI 圖片素材
+```
 
-***
-🛠️ 開發環境與技術棧
-程式語言：Python / C#
+---
 
-遊戲引擎/框架：Unity (URP) / Web Tech
+# 🛠 開發技術
 
-自動化工具：Pandas, Pillow, PyInstaller
+## Language
 
-API 整合：LINE Messaging API, AI-assisted System
+* Java
 
-🚀快速開始
-前提條件
-請確保您的電腦已安裝 Python 3.10+ 或對應的執行環境。
+## GUI
 
-安裝步驟
-複製專案倉庫
+* Java Swing
 
-Bash
-git clone [https://github.com/your-username/TwsausageApp.git](https://github.com/your-username/TwsausageApp.git)
-cd TwsausageApp
-解壓核心資源包
-使用 7-Zip 或相關工具解壓 TwsausageApp.7z 至專案根目錄。
+## IDE
 
-安裝依賴套件
+* Eclipse IDE
 
-Bash
-pip install -r requirements.txt
-執行應用程序
+## Concepts
 
-Bash
-python main.py
-📦 打包發佈
-若需要將本專案打包為獨立的 Windows 桌面執行檔，可以使用 pyinstaller：
+* Object-Oriented Programming (OOP)
+* Event Driven Programming
+* MVC Design Concept
+* Random Number Generation
+* Printing API
 
-Bash
-pyinstaller --onefile --windowed main.py
-🤝 貢獻指南
-我們非常歡迎任何形式的貢獻！如果您有任何想法、Bug 反饋或功能建議，請遵循以下步驟：
+---
 
-Fork 本專案
+# 🚀 執行方式
 
-建立您的特性分支 (git checkout -b feature/AmazingFeature)
+## 1. Clone 專案
 
-提交您的修改 (git commit -m 'Add some AmazingFeature')
+```bash
+git clone https://github.com/your-account/TwSausageApp.git
+```
 
-推送到分支 (git push origin feature/AmazingFeature)
+## 2. 使用 Eclipse 開啟
 
-開啟一個 Pull Request
+Import Existing Project
 
-📄 開源授權條款
-本專案採用 MIT 授權條款 進行開源 - 詳見 LICENSE 檔案。
+或直接匯入：
 
-💡 本專案由 Kai Mao Technology 技術教育工程團隊與 AI 協作研發。
-### 🛠️ 我可以如何修改這個範本？
-1. **調整簡介**：如果不完全是骰子遊戲或香腸地圖，你可以把 `📖 專案簡介` 修改為最符合你目前開發項目的文字。
-2. **修改快速開始**：如果這是純 C# / Unity 專案，你可以把安裝步驟改成「使用 Unity Hub 開啟專案」。
-3. **更換連結**：記得把 `your-username` 換成你真正的 GitHub 帳號名稱！
+```text
+File
+ └ Import
+    └ Existing Projects into Workspace
+```
+
+---
+
+## 3. 執行主程式
+
+```java
+twsausageUi.java
+```
+
+或執行：
+
+```bash
+Run As → Java Application
+```
+
+---
+
+# 📸 系統畫面
+
+## 主點餐介面
+
+* 輸入顧客姓名
+* 選擇商品數量
+* 套用折扣
+* 產生訂單
+
+## 十八啦遊戲
+
+* 顯示玩家骰子
+* 顯示老闆骰子
+* 計算點數
+* 顯示勝負結果
+
+---
+
+# 📚 學習重點
+
+本專案練習了以下 Java 技術：
+
+* Swing GUI 開發
+* JFrame 與 JPanel 介面設計
+* Mouse Event 處理
+* ActionListener 事件控制
+* 資料驗證
+* 物件導向封裝
+* 隨機骰子演算法
+* 商業邏輯設計
+* 列印功能實作
+
+---
+
+# 🔮 未來優化方向
+
+* 資料庫儲存訂單紀錄
+* 會員系統
+* 庫存管理
+* 報表分析
+* POS 收銀功能
+* 響應式介面設計
+* JavaFX 重構版本
+
+---
+
+# 👨‍💻 Author
+
+Sky Lin
+
+Game Art & Software Development Learner
+
+Taiwan
+
+---
+
+# 📄 License
+
+This project is licensed for educational and learning purposes.
+
+Feel free to fork and improve it.
