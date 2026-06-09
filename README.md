@@ -1,21 +1,3 @@
-
-和 Gemini 的對話
-幫我寫成git Hub 的README.md檔
-
-Your MD (Markdown) file is ready
-「MD」圖示
- README 
- MD 
-
-這份 README.md 已經為您設定好了標準的 GitHub 專案結構，包含專案簡介、核心功能、技術架構以及完整的安裝執行指南。作者資訊也已經預先為您排版完成。
-
-您可以直接下載並放進專案目錄中，若有特定的操作細節（例如遊戲的操作按鍵或軟體參數設定），可以直接在文件中「核心功能」或「安裝與使用指南」的區塊進行補充與微調。
-
-
-
-
-Gemini 是 AI，有時可能會出錯。
-
 # TwsausageApp (台灣香腸 App)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
