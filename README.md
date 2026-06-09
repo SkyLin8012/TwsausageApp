@@ -51,4 +51,27 @@ TwsausageApp/
 ├── docs/               # 專案相關文檔
 ├── TwsausageApp.sln    # 方案檔案 (若為 C# 專案)
 └── README.md           # 本說明文件
+🤝 貢獻指南
+我們非常歡迎社群開發者工進一步加入！如果您有任何改進建議、Bug 回報或新功能構想：
 
+Fork 本專案。
+
+建立您的功能分支 (git checkout -b feature/AmazingFeature)。
+
+提交您的修改 (git commit -m 'Add some AmazingFeature')。
+
+推送到遠端分支 (git push origin feature/AmazingFeature)。
+
+開啟一個 Pull Request。
+
+📄 開源授權
+本專案採用 MIT License 開源授權條款 - 詳見 LICENSE 檔案。
+
+✉️ 聯絡與支持
+專案開發者：Lin Kai Mao (林楷貓)
+
+職稱：科技教育工程師 (Technology Education Engineer)
+
+公司/組織：楷貓科技 (Kai Mao Technology)
+
+專案連結：https://github.com/your-username/TwsausageApp
